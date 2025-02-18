@@ -1,41 +1,28 @@
-# 数据结构与算法B
+# P0150:生理周期
+------
 
-这儿用于讨论谢正茂老师所授班级的课程代码和上机作业。
-### 课程代码
+总时间限制: 1000ms 内存限制: 65536kB
 
-代码行数多了，没有bug是不可能的。欢迎同学们批判的学习这里的课程代码，发现并解决其中的bug。对于代码可读性和效率的改进，讲出自己的道理，更是非常欢迎的。
+### 描述
 
-### 上机作业
+人生来就有三个生理周期，分别为体力、感情和智力周期，它们的周期长度为23天、28天和33天。每一个周期中有一天是高峰。在高峰这天，人会在相应的方面表现出色。例如，智力周期的高峰，人会思维敏捷，精力容易高度集中。因为三个周期的周长不同，所以通常三个周期的高峰不会落在同一天。对于每个人，我们想知道何时三个高峰落在同一天。对于每个周期，我们会给出从当前年份的第一天开始，到出现高峰的天数（不一定是第一次高峰出现的时间）。你的任务是给定一个从当年第一天开始数的天数，输出从给定时间开始（不包括给定时间）下一次三个高峰落在同一天的时间（距给定时间的天数）。例如：给定时间为10，下次出现三个高峰同天的时间是12，则输出2（注意这里不是3）。
 
-上机作业在openjudge子目录下，目前只收录两个来源的题目：
- - [数据结构与算法(Python语言实现)教材题库](http://dsbpython.openjudge.cn/dspythonbook/)
- - [课程同步作业](https://xzmdsa.openjudge.cn)
+### 输入
 
-前者里面有200道题；后者随课程进度发布，共8次左右作业，每次5-7题。
+一行，包含四个整数：p, e, i和d，相邻两个整数之间用单个空格隔开。 p, e, i分别表示体力、情感和智力高峰出现的时间（时间从当年的第一天开始计算）。d 是给定的时间，可能小于p, e, 或 i。 所有给定时间是非负的并且小于等于365, 所求的时间小于等于21252。
 
-请阅读该目录下的README文件，本学期针对**先登**荣誉，每登提供0.2分的加分；对**夺旗**荣誉，每旗提供0.8的加分。为了让每个人都有参与的机会，限制每个github账户每天只能发起一次pull_request。
+### 输出
 
-### Markdown格式
+一个整数，即从给定时间起，下一次三个高峰同天的时间（距离给定时间的天数）。
 
-一种很受欢迎的写文档的工具。如果要写一本很“漂亮”的书，那是比不上LaTex的。Markdown可以通过嵌入html来获得一些丰富的格式，但对于在线文档，最简单的格式和功能就足够了。Markdown最大的好处是**简单高效**，高端的食材往往只需要最简单的烹饪方法。
+### 样例输入
 
-参考：<br>
-[Markdown基本语法](https://www.markdownguide.org/basic-syntax/)
-### 如何协作--提交代码并参与讨论
+    4 5 6 7
 
-利用github.com的pull request功能，进行线上协作与讨论。
+### 样例输出
 
-我们用的是一种Crowdsource的松散协作方式，maintainer之外的contributor对主仓库并不具有直接的写权限，需要先fork主仓库到自己的github账户下进行工作，根据工作的主题新开一个branch，在该branch下面完成工作后向主仓库提出pull request(pr)申请，maintainer和其他contributor可以review该pr，contributor根据别人的review可以修改pr的内容，最终满意后由maintainer把pr的工作内容合并进主仓库。流程基本就是：<br>
-fork ==> branch ==> commit* ==> pull_request ==> (review, commit)* ==> merge,close<br>
-contributor下次开新的branch的时候，并不需要每次都fork主仓库，和主仓库多同步以获得最新的内容。
+    16994
 
+### 来源
 
-参考：<br>
-[How to contribute to open source projects (our community project walkthrough)](https://www.youtube.com/watch?v=dLRA1lffWBw)
-
-#### 国内镜像地址
-
-由于在大陆地区访问github网站连接有不稳定的情况，这里另外提供了一个国内的[镜像](https://gitee.com/patrickxzm/dsa2020)。需要注意的是，该镜像是只读的，前面的协作功能只在github上进行。
-
-这里有一些上网的资源可供利用：[Clash](https://blog.189854.xyz/blog/walless/2023/11/04/clash.html)|[验证PKU邮箱](https://189854.xyz/verify/)
-
+East Central North America 1999, POJ 1006， 程序设计实习2007
