@@ -20,4 +20,14 @@ if __name__ == '__main__':
     pie = list(map(lambda x:x*x*math.pi,map(int,input().split())))
     v2 = max(pie)
     print('%.3f' %find(pie,m,0,v2))
-    
+
+
+'''
+def find(L,M,V1,V2):
+    while V2-V1 > 1e-5:
+        if div(L,M,(V1+V2)/2):
+            V1 = (V1+V2)/2
+        else:
+            V2 = (V1+V2)/2
+    return V1
+'''
