@@ -1,0 +1,32 @@
+```
+P0030 AC答案
+from collections import deque
+def pre(name_list, num):
+    queue = deque()
+    for name in name_list:
+        queue.append(name)
+
+    while len(queue) > 1:
+        for i in range(num):
+            queue.append(queue.popleft())
+        queue.popleft()
+    return queue.popleft()
+while True:
+    n, m = map(int, input().split())
+    if {n,m} == {0}:
+        break
+    monkey = [i for i in range(1, n+1)]
+    print(pre(monkey, m-1))
+```
+
+
+
+![屏幕截图 2025-02-18 213728](C:\Users\qihon\Pictures\Screenshots\屏幕截图 2025-02-18 213728.png)
+
+
+
+思路：创建一个列表，将每一个元素依次取出，符合条件的留下，不符合条件的再重新添加回列表之中，进而构成一个圈，实现约瑟夫问题的闭环。同时引入了deque大大降低了时间复杂度，降至O（1），效率较高。
+
+
+
+心路历程：这道题原来只是尝试了列表，手动进行入列和出列，时间复杂度为O(N)较高，后来进行了内置函数的优化，以后要加强积累！
