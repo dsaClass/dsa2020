@@ -29,6 +29,13 @@
 fork ==> branch ==> commit* ==> pull_request ==> (review, commit)* ==> merge,close<br>
 contributor下次开新的branch的时候，并不需要每次都fork主仓库，和主仓库多同步以获得最新的内容。
 
+常见的问题：
+- contributor不要修改自己的main分支，而是新建branch上commit。为了避免版本冲突问题，main分支需要经常同步maintainer的仓库，尽可能每次branch前同步一次，在最新main上建新branch。
+- 新建branch的名字应该与准备提交的内容有关，而且不应包含中文字符，否则github会报警；在发起pull request时应该对工作内容有简单的描述，描述中可以使用中文。
+- 如果pr一个branch1有比较多的错误被退回，从main上新开一个branch2，比在branch1上作修改更方便。
+- git主要的优势在于管理文本内容，因此非文本的内容在git仓库中尽量避免。非必要也不要在文档中插入图片。从目前的需求看，只使用文本是足够的。
+- 对于一个pr，maintainer只能全部接受或全部拒绝，所以每次pr最好只有一个独立的工作。限制了一次pr频率，也即限制了工作的提交频率。
+
 
 参考：<br>
 [How to contribute to open source projects (our community project walkthrough)](https://www.youtube.com/watch?v=dLRA1lffWBw)
