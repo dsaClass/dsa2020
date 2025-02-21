@@ -1,3 +1,6 @@
+#使用栈来记录括号
+#若栈进出符合规则，且最后栈清零，则括号正确
+
 n=int(input())
 l=[input() for _ in range(n)]
 def f(s):
