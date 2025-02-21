@@ -1,9 +1,15 @@
-n=int(input())
-def stj(n):
-    if n==1:
-        return 1
-    elif n==2:
-        return 2
+a=input()
+b={}
+for i in a:
+    if i in b:
+        b[i]+=1
     else:
-        return stj(n-1)+stj(n-2)
-print(stj(n))
+        b[i]=1
+flag=True
+for j in b:
+    if b[j]==1:
+        print(j)
+        flag=False
+        break
+if flag:
+    print('no')
