@@ -1,27 +1,26 @@
-#P0410:括号配对
+# P0210：4 Values whose Sum is 0 (2442)
+总时间限制: 15000ms 单个测试点时间限制: 5000ms 内存限制: 228000kB
+## 描述
+The SUM problem can be formulated as follows: given four lists A, B, C, D of integer values, compute how many quadruplet (a, b, c, d ) ∈ A x B x C x D are such that a + b + c + d = 0 . In the following, we assume that all lists have the same size n .
 
-##基本信息
+## 输入
+The first line of the input file contains the size of the lists n (this value can be as large as 4000). We then have n lines containing four integer values (with absolute value as large as 228 ) that belong respectively to A, B, C and D .
 
-总时间限制: 1000ms 
-内存限制: 65536kB
+## 输出
+For each input file, your program has to write the number quadruplets whose sum is zero.
 
-##描述
+## 样例输入
+    6
+    -45 22 42 -16
+    -41 -27 56 30
+    -36 53 -37 77
+    -36 30 -75 -46
+    26 -38 -10 62
+    -32 -54 -6 45
 
-字符串中可能有三种成对的括号，"( )"、"[ ]"、"{ }"。请判断字符串的括号是否都正确配对。无括号也算正确配对。括号交叉算不正确配对，例如"12{34[78}ab]"就不算正确配对。但是一对括号被包含在另一对括号里面，例如"12{ab[8]}"不影响正确性。
+## 样例输出
+    5
 
-##输入
-
-第一行为整数n(n<40)，接下来有n行，每行一个无空格的字符串，长度小于1000。
-
-##输出
-对每行字符串，如果括号配对，输出"YES"，否则输出"NO"。
-
-##样例输入
-2
-12{ab[8]}
-12{34[78}ab]
-
-##样例输出
-YES
-NO
+## 提示
+Sample Explanation: Indeed, the sum of the five following quadruplets is zero: (-45, -27, 42, 30), (26, 30, -10, -46), (-32, 22, 56, -46),(-32, 30, -75, 77), (-32, -54, 56, 30).
 
