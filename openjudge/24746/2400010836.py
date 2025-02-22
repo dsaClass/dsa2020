@@ -1,0 +1,9 @@
+		p = self.head
+		q = p.next
+		p.next = None
+		while q != None:
+			u = q.next
+			q.next = p
+			p = q
+			q = u
+		self.head = p
