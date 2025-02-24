@@ -22,14 +22,14 @@ def check(ans):
         return 1
     return 0
 
-low, high = 0, L
-result = 0
+low,high = 0,L
+ans = 0
 mid = L
 while low <= high:
     if check(mid):
-        result = mid
-        low = mid + 1
+        ans = mid
+        low = mid+1
     else:
-        high = mid - 1
-    mid = (low + high) // 2
-print(result)
+        high = mid-1
+    mid = (low+high)//2
+print(ans)
