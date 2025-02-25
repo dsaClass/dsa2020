@@ -9,7 +9,7 @@
 
 例如对于以下森林：
 
-![森林](\image\1401904592.png "可选标题")
+![森林](http://media.openjudge.cn/images/upload/1401904592.png "可选标题")
 
 两棵树的层次遍历序列分别为：C E F G K H J / D X I
 
