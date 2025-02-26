@@ -9,7 +9,7 @@
 
 上机作业在openjudge子目录下，目前只收录两个来源的题目：
  - [数据结构与算法(Python语言实现)教材题库](http://dsbpython.openjudge.cn/dspythonbook/)
- - [课程同步作业](https://xzmdsa.openjudge.cn)
+ - [课程同步作业](http://xzmdsa.openjudge.cn)
 
 前者里面有200道题；后者随课程进度发布，共8次左右作业，每次5-7题。
 
@@ -57,3 +57,5 @@ contributor下次开新的branch的时候，并不需要每次都fork主仓库�
 
 ###  重要通知
 - 2/23/2025 因为在大家的提交中存在一些通病，暂停先登刷题的pr
+- 2/25/2025 第三周（3/4/2025）上课时间随堂小测，考察Python基础技能
+
