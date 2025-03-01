@@ -11,6 +11,11 @@
  - [数据结构与算法(Python语言实现)教材题库](http://dsbpython.openjudge.cn/dspythonbook/)
  - [课程同步作业](http://xzmdsa.openjudge.cn)
 
+登录OJ账号之后请加入[数算B谢正茂班](http://xzmdsa.openjudge.cn),选择“数算B13班-2025春季”，把在班中的昵称改为“学号+姓名”，这样每次的作业和考试才会有成绩。
+
+上机课时间为每周四5-6节，地点为计算中心7-8号机房
+- 【腾讯文档】[数算B-13班上机座次表]( https://docs.qq.com/sheet/DSnhIcVJDTnVHcER0?tab=txwm2e)
+
 前者里面有200道题；后者随课程进度发布，共8次左右作业，每次5-7题。
 
 请阅读该目录下的README文件，本学期针对**先登**荣誉，每登提供0.2分的加分；对**夺旗**荣誉，每旗提供0.8的加分。为了让每个人都有参与的机会，限制每个github账户每天只能发起一次pull_request。
