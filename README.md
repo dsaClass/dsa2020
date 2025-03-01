@@ -9,7 +9,12 @@
 
 上机作业在openjudge子目录下，目前只收录两个来源的题目：
  - [数据结构与算法(Python语言实现)教材题库](http://dsbpython.openjudge.cn/dspythonbook/)
- - [课程同步作业](https://xzmdsa.openjudge.cn)
+ - [课程同步作业](http://xzmdsa.openjudge.cn)
+
+登录OJ账号之后请加入[数算B谢正茂班](http://xzmdsa.openjudge.cn),选择“数算B13班-2025春季”，把在班中的昵称改为“学号+姓名”，这样每次的作业和考试才会有成绩。
+
+上机课时间为每周四5-6节，地点为计算中心7-8号机房
+- 【腾讯文档】[数算B-13班上机座次表]( https://docs.qq.com/sheet/DSnhIcVJDTnVHcER0?tab=txwm2e)
 
 前者里面有200道题；后者随课程进度发布，共8次左右作业，每次5-7题。
 
@@ -57,3 +62,5 @@ contributor下次开新的branch的时候，并不需要每次都fork主仓库�
 
 ###  重要通知
 - 2/23/2025 因为在大家的提交中存在一些通病，暂停先登刷题的pr
+- 2/25/2025 第三周（3/4/2025）上课时间随堂小测，考察Python基础技能
+
