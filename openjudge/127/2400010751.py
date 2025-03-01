@@ -36,3 +36,5 @@ while True:
             best_time = max_time
             best_person = start
     print("disjoint" if best_time == float('inf') else f"{best_person} {best_time}")
+
+
