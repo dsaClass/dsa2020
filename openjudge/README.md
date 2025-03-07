@@ -1,20 +1,74 @@
-# OpenJudge
+## 002:想要插队的Y君
 
-这里用来刷OpenJudge上的题。contributor提交本目录下的内容应该遵守下面的规则：<br>
-- OpenJudge上的每个题都有一个全局题号，用全局题号作为子目录名来存放该题的题目、答案、答题文档。
-- 题目存放在README.md文件中，题目应该跟OJ内容一致。如果需要的话，应该补充它在比赛中的题目ID，比方说P0510之类。
-- 答案存放在id.py文件中，id为contributer的学号
-- 答题文档放在id.md文件中，同上，id为contributor的学号。答题文档必须包括在OJ上的运行结果，并且显著标明了contributor的姓名。一份良好的答题文档还可以包括：
-	- 问题的分析
-	- 对解题方法的说明
-	- 对程序结构的分析
-	- 解题感想
-	- 踩过的坑
-- 文档中如果有必须的图片，请下载后新建images子目录保存，和其他文件一起提交。
+- 总时间限制: 1000ms 内存限制: 65536kB
 
-第一个在子目录下提交题目、AC答案和答题文档的contributer，会被maintainer标记为该题的**先登**。除非原来的题目有错误，后面的提交者尽量不要重复提交题目，造成的冲突需要maintainer手工merge。如果题目具有一定的挑战性，则增加**夺旗**荣誉：
-- 在所有的提交中综合答案和答题文档，最优秀的contributor会被标记为该题的**夺旗**。
+- ### 描述
 
-需要注意的是，**先登**只会有一次机会，**夺旗**可能会反复争夺。没有人**夺旗**的话，**先登**同时是**夺旗**。
+  很遗憾，一意孤行的Y君没有理会你告诉他的饮食计划并很快吃完了他的粮食储备。 但好在他捡到了一张校园卡，凭这个他可以偷偷混入领取物资的队伍。 为了不被志愿者察觉自己是只猫，他想要插到队伍的最中央。（插入后若有偶数个元素则选取靠后的位置） 于是他又找到了你，希望你能帮他修改志愿者写好的代码，在发放顺序的中间加上他的学号6。 你虽然不理解志愿者为什么要用链表来写这份代码，但为了不被发现只得在此基础上进行修改：
+  ```python
+  class Node:
+  	def __init__(self, data, next=None):
+  		self.data, self.next = data, next
+  
+  class LinkList:
+  	def __init__(self):
+  		self.head = None
+  
+  	def initList(self, data):
+  		self.head = Node(data[0])
+  		p = self.head
+  		for i in data[1:]:
+  			node = Node(i)
+  			p.next = node
+  			p = p.next
+  
+  	def insertCat(self):
+  // 在此处补充你的代码
+  ########            
+  	def printLk(self):
+  		p = self.head
+  		while p:
+  			print(p.data, end=" ")
+  			p = p.next
+  		print()
+  
+  lst = list(map(int,input().split()))
+  lkList = LinkList()
+  lkList.initList(lst)
+  lkList.insertCat()
+  lkList.printLk()
+  ```
 
-没有AC的答案也可以发起pull request，作为答疑的一种新途径。老师、助教和同学都可以来review出问题的代码，提出解决的建议。如果最终获得AC，该答案也可能被merge进主仓库，**踩过的坑**对别人来说，也是非常有用的。
+  
+
+  ### 输入
+
+  一行，若干个整数，组成一个链表。
+
+  ### 输出
+
+  一行，在链表中间位置插入数字6后得到的新链表
+
+  ### 样例输入
+
+  ```
+  ### 样例输入1
+  8 1 0 9 7 5
+  ### 样例输入2
+  1 2 3
+  ```
+
+  
+
+  ### 样例输出
+
+  ```
+  ### 样例输出1
+  8 1 0 6 9 7 5
+  ### 样例输出2
+  1 2 6 3
+  ```
+
+  ### 来源
+
+  Lou Yuke
