@@ -6,7 +6,7 @@ class UnorderedList:
 
     def add(self, item):
         temp = Node(item)
-        temp.setNext(self.head)
+        temp.next = self.head
         self.head = temp
 
     def size(self):
@@ -14,7 +14,7 @@ class UnorderedList:
         count = 0
         while current != None:
             count = count + 1
-            current = current.getNext()
+            current = current.next
 
         return count
 
@@ -22,9 +22,9 @@ class UnorderedList:
         current = self.head
         
         while current != None:
-            if current.getData() == item:
+            if current.data == item:
                 return True
-            current = current.getNext()
+            current = current.next
 
         return False
 
@@ -33,17 +33,26 @@ class UnorderedList:
         previous = None
         
         while current != None:
-            if current.getData() == item:
+            if current.data == item:
                 break
             previous = current
-            current = current.getNext()
+            current = current.next
         else:
             return
 
         if previous == None:
-            self.head = current.getNext()
+            self.head = current.next
         else:
-            previous.setNext(current.getNext())
+            previous.next=current.next
+
+    def __str__(self):
+        l = []
+        p = self.head
+        while p is not None:
+            l.append(str(p.data))
+            p = p.next
+        return ' '.join(l)
+
 
 if __name__ == "__main__":
     mylist = UnorderedList()
@@ -56,3 +65,5 @@ if __name__ == "__main__":
     print(mylist.size())
     mylist.remove(12)
     print(mylist.size())
+
+    
